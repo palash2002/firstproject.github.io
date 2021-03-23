@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body background="bg.gif">
+
+        <div id="rcontainer" class="container" height="100" width="100">
+            <div class="card" id="rcard">
+                <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                <div class="xback"><img id="reference" src="0.jpg" width="100" height="100"></div>
+            </div>
+        </div>
+         
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Score : </label><label id="score">0</label> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+            <label id="time">15</label><label> Seconds </label><br>
+            <button id="button" class="button" onclick="random(); timer();">Start !!</button>
+            <br>
+            <table cellspacing="0">
+            <tr id="a0">
+                <td id="">
+                    
+                    <div class="container" height="100" width="100"> 
+                        <div class="card" id="card00" onclick="clicked00(); this.classList.toggle('flipped');"> 
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div> 
+                            <div class="back"><img id="a00" src="0.jpg" width="100" height="100"></div> 
+                        </div> 
+                    </div>
+                    
+                </td>
+                <td id="">
+
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card01" onclick="clicked01(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a01" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card02" onclick="clicked02(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a02" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card03" onclick="clicked03(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a03" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card04" onclick="clicked04(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a04" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr id="a1">
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card10" onclick="clicked10(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a10" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card11" onclick="clicked11(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a11" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card12" onclick="clicked12(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a12" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card13" onclick="clicked13(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a13" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card14" onclick="clicked14(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a14" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr id="a2">
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card20" onclick="clicked20(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a20" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card21" onclick="clicked21(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a21" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card22" onclick="clicked22(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a22" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card23" onclick="clicked23(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a23" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card24" onclick="clicked24(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" width="100" height="100"></div>
+                            <div class="back"><img id="a24" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr id="a3">
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card30" onclick="clicked30(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a30" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card31" onclick="clicked31(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a31" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card32" onclick="clicked32(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a32" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card33" onclick="clicked33(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a33" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card34" onclick="clicked34(); this.classList.toggle('flipped')">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a34" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+            <tr id="a4">
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card40" onclick="clicked40(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a40" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card41" onclick="clicked41(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a41" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card42" onclick="clicked42(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a42" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card43" onclick="clicked43(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a43" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+                <td id="">
+                    <div class="container" height="100" width="100">
+                        <div class="card" id="card44" onclick="clicked44(); this.classList.toggle('flipped');">
+                            <div class="front"><img src="0.jpg" height="100" width="100"></div>
+                            <div class="back"><img id="a44" src="0.jpg" width="100" height="100"></div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+            
+        </table>
+        
+    </body>
+</html>
